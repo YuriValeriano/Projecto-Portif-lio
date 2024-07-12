@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta htpp-equiv="X-UA-Compatible" contente="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site Portifolio Pessoal">
+    <meta name="author" content="Yuri Valeriano Kaneta">
+    <meta name="keywords" content="Data Science, Database, SQL, HTML, CSS, Javascript">
+    <link rel="shortcut icon" href="Imagens/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/03b4ed91e3.js" crossorigin="anonymous"></script>
+    <title>Portifolio Yuri</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Imagens/logo.png" class="logo">
+                <ul id="ladomenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#portifolio">Portifólio</a></li>
+                    <li><a href="#contactos">Contacto</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Data Science</p>
+                <h1>Olá, Sou o <span>Yuri</span><br>Angolano</h1>
+            </div>
+        </div>
+    </div>
+    
+    <!----------------Sobre mim---------------------------->
+    <div id="sobre">
+        <div class="container">
+            <div class="row">
+                <div class="sobre-col-1">
+                    <img src="Imagens/user.jpg" alt="Foto do autor">
+                </div>
+                <div class="sobre-col-2">
+                    <h1 class="sub-titulo">Sobre Mim</h1>
+                    <p class="texto">Desenvolvedor Front-End detalhista com mais de 5 anos de experiência trabalhando com HTML, CSS, Javascript, JQuery e TypeScript. Altamente adepto de projetos independentes e colaborativos, com ênfase em desenvolvimento de landing pages e sites. Atualmente em busca de uma função onde possa integrar minha clientela atual e ajudar a atrair uma base de clientes mais ampla para mim e meu futuro empregador.
+                    </p>
+
+                    <div class="tab-titulo">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experiências')">Experiências</p>
+                        <p class="tab-links" onclick="opentab('Formação')">Formação</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Data Science</span><br>Análise de dados e Machine Learning</li>
+                            <li><span>Database</span><br>Manipulação de Dados (SQL) </li>
+                            <li><span>Web Developer</span><br>Criação e manutenção de sites e Aplicativos para a Web</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experiências">
+                        <ul>
+                            <li><span>eeeeeeeeeeeeeee</span><br>Análise de dados e Machine Learning</li>
+                            <li><span>ggggggggggggg</span><br>Manipulação de Dados (SQL) </li>
+                            <li><span>2015</span><br>Web Designer</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Formação">
+                        <ul>
+                            <li><span>Universidade Cruzeiro do Sul</span><br>Análise e Desenvolvimento de Sistemas</li>
+                            <li><span>Universidade Cruzeiro do Sul</span><br>Web Designer</li>
+                            <li><span>Coursera</span><br>Certificado Profissional Ciência de dados da IBM</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------Serviços---------------------------->
+    
+    <div id="servicos">
+        <div class="container">
+            <h1 class="sub-titulo">Meus Serviços</h1>
+            <div class="lista-servicos">
+                <div>
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <h2>Data Science</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.sit amet consectetur adipisicing elit.</p>
+                    <a href="#">Saiba mais</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Database</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.sit amet consectetur adipisicing elit.</p>
+                    <a href="#">Saiba mais</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Developer</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.sit amet consectetur adipisicing elit.</p>
+                    <a href="#">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+   </div>
+
+   <!----------------Portifólio---------------------------->
+
+   <div id="portifolio">
+    <div class="container">
+        <h1 class="sub-titulo">Meus Trabalhos</h1>
+        <div class="lista-trabalhos">
+            <div class="trabalho">
+                <img src="Imagens/work-1.jpg" alt="Trabalho 1">
+                <div class="camada">
+                    <h3>Analise de Dados e Machine Learning</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="trabalho">
+                <img src="Imagens/work-2.jpg" alt="Trabalho 2">
+                <div class="camada">
+                    <h3>Manibulação de Dados em SQL</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="trabalho">
+                <img src="Imagens/work-3.jpg" alt="Trabalho 3">
+                <div class="camada">
+                    <h3>Criação de Aplicativos Web</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">Saiba mais</a>
+    </div>
+   </div>
+
+     <!----------------Contactos---------------------------->
+
+     <div id="contactos">
+        <div class="container">
+            <div class="row">
+                <div class="contactos-direito">
+                    <h1 class="sub-titulo">Contactos</h1>
+                    <p><i class="fa-solid fa-envelope"></i>yurivaleriano69@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+244 927707807</p>
+                    <div class="midia-social">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="#" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contactos-esquerda">
+                    <form>
+                        <input type="text" name="Nome" placeholder="Seu Nome" required>
+                        <input type="email" name="E-mail" placeholder="Seu E-mail">
+                        <textarea name="Mensagem" rows="6" placeholder="Sua Mensagem"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Yuri Valeriano</p>
+        </div>
+     </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+          
+        }
+
+    </script>
+
+    <script>
+
+        var ladomeu = document.getElementById("ladomenu");
+
+        function openmenu(){
+            ladomeu.style.right = "0";
+        }
+
+        function closemenu(){
+            ladomeu.style.right = "-200px"
+        }
+
+    </script>
+
+</body>
+</html>
